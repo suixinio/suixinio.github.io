@@ -43,7 +43,7 @@
     
     <title>
         
-            《死亡诗社》- 牛叔讲评摘记 | 
+            RFID研究（一）M1卡背景与数据结构 | 
         
         suixin&#39;s blog
     </title>
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="suixin&#39;s blog">
-    <meta name="msapplication-starturl" content="https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/">
+    <meta name="msapplication-starturl" content="https://blog.suixin.kim/2016/12/08/nfc-data-introduction/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="suixin&#39;s blog">
@@ -230,16 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/">
+    <meta property="og:url" content="https://blog.suixin.kim/2016/12/08/nfc-data-introduction/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="《死亡诗社》- 牛叔讲评摘记 | suixin&#39;s blog">
+    <meta property="og:title" content="RFID研究（一）M1卡背景与数据结构 | suixin&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Wed May 03 2017 01:02:54 GMT+0800">
-        <meta property="article:modified_time" content="Fri Mar 23 2018 01:08:31 GMT+0800">
+        <meta property="article:published_time" content="Thu Dec 08 2016 21:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 28 2018 00:05:03 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,7 +247,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/index.html" />
+        <link rel="canonical" href="https://blog.suixin.kim/2016/12/08/nfc-data-introduction/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,10 +259,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/index.html",
-    "headline": "《死亡诗社》- 牛叔讲评摘记",
-    "datePublished": "Wed May 03 2017 01:02:54 GMT+0800",
-    "dateModified": "Fri Mar 23 2018 01:08:31 GMT+0800",
+    "mainEntityOfPage": "https://blog.suixin.kim/2016/12/08/nfc-data-introduction/index.html",
+    "headline": "RFID研究（一）M1卡背景与数据结构",
+    "datePublished": "Thu Dec 08 2016 21:00:00 GMT+0800",
+    "dateModified": "Wed Mar 28 2018 00:05:03 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "suixin",
@@ -340,6 +340,15 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0x00-锲机"><span class="post-toc-number">1.</span> <span class="post-toc-text">0x00 锲机</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0X01-RFID"><span class="post-toc-number">2.</span> <span class="post-toc-text">0X01 RFID</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0X02-RFID标签-介绍"><span class="post-toc-number">3.</span> <span class="post-toc-text">0X02 RFID标签 介绍</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0X03-M1卡的数据结构"><span class="post-toc-number">4.</span> <span class="post-toc-text">0X03 M1卡的数据结构</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0x05-结语"><span class="post-toc-number">5.</span> <span class="post-toc-text">0x05 结语</span></a></li></ol>
+    </ul>
+    
 
 
 
@@ -369,7 +378,7 @@
         
     
             <p class="article-headline-p">
-                《死亡诗社》- 牛叔讲评摘记
+                RFID研究（一）M1卡背景与数据结构
             </p>
         </div>
 
@@ -388,7 +397,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>suixin</strong>
-        <span>5月 03, 2017</span>
+        <span>12月 08, 2016</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -420,7 +429,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=《死亡诗社》- 牛叔讲评摘记&url=https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/index.html&pic=https://blog.suixin.kim/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=RFID研究（一）M1卡背景与数据结构&url=https://blog.suixin.kim/2016/12/08/nfc-data-introduction/index.html&pic=https://blog.suixin.kim/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -429,7 +438,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=《死亡诗社》- 牛叔讲评摘记&url=https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/index.html&via=suixin" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=RFID研究（一）M1卡背景与数据结构&url=https://blog.suixin.kim/2016/12/08/nfc-data-introduction/index.html&via=suixin" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -438,7 +447,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.suixin.kim/2016/12/08/nfc-data-introduction/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -447,7 +456,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.suixin.kim/2016/12/08/nfc-data-introduction/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -472,12 +481,41 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <blockquote>
-<p>我步入丛林<br>因为我希望生活得有意义<br>我希望获得深刻<br>汲取生命中所有的精华<br>把非生命的一切都击溃<br>以免当我生命终结时<br>发现自己从来没有活过<br>——惠特曼</p>
-</blockquote>
-<p>现实中的教育 往往是要把我们塑造成符合现实所用的人<br>学生被送进来 流水线加工后再送出去<br>进入工厂公司 给别人打工赚钱<br>这样的教育不是要让我们去享受生活<br>而是要教我们习惯了被世界改造<br>个体是否过得快乐这不重要<br>因为群体只需要你提供价值</p>
-<p>你有过老师吗？我是说真正的老师<br>不是那些被机器削平棱角 只知道读课本只想挣钱的老师<br>他们在教你答卷拿分的同事 有没有教过你<br>人的生命只有一次 我们能够把握自己的命运<br>有没有告诉你们要独立思考 要活在当下<br>花开堪折直须折 莫待无花空折枝</p>
-<p>其实一个真正的导师 通过自己的诱导<br>让孩子明白他应该怎么做就完了<br>而不是刻板的规定他必须怎么做<br>简单粗暴不可取 你是省事了 却把孩子给坑了</p>
+        <p>免责声明：本站提供安全工具、程序(方法)可能带有攻击性，仅供安全研究与教学之用，风险自负!</p>
+<p>文章的最开始，先来致敬nfc-tools项目组。</p>
+<h1 id="0x00-锲机"><a href="#0x00-锲机" class="headerlink" title="0x00 锲机"></a>0x00 锲机</h1><p>一直没有下定决心认真的去研究某个安全领域，很早的时候就看到有很多前辈去研究这个RFID。</p>
+<p>恰逢看到某个公告说提到了这件事，心里一直纠结是否写一系列关于RFID的文章，比较纠结，想了想还是整理一下吧，但愿不会被请去喝茶。</p>
+<p>我也只是希望本篇文章能为大家在RFID安全方向上起到一个抛砖引玉的作用。</p>
+<h1 id="0X01-RFID"><a href="#0X01-RFID" class="headerlink" title="0X01 RFID"></a>0X01 RFID</h1><p>射频识别，RFID技术，又称无线射频识别，是一种通信技术，可通过无线电讯号识别特定目标并读写相关数据。</p>
+<p>从概念上来讲，RFID类似于条形码扫描，相对于条形码扫描而言，它是将编码放入目标物的RFID标签中，利用频率信号将信息由RFID标签转送至RFID读写器。RFID标签相当于附着于物品上的二维码，但是与条形码最大的不同在于，RFID标签中的数据可以被改写，而条形码中的数据是无法进行改写的。</p>
+<p>当然也只是简单的说一下，更多的信息，请看百度百科。</p>
+<h1 id="0X02-RFID标签-介绍"><a href="#0X02-RFID标签-介绍" class="headerlink" title="0X02 RFID标签 介绍"></a>0X02 RFID标签 介绍</h1><p>RFID技术中所衍生的产品大概有三大类：无源RFID产品、有源RFID产品、半有源RFID产品。</p>
+<p>根据RFID Tag的工作方式，有可分为被动，主动、半主动三种。最常见的就是被动式的了。</p>
+<p>我们目前接触的多的就是无源、被动式产品，其中最为广泛常见的就是MIFARE Classic 1K卡，简称M1卡、S50卡。<br><img src="http://p68umjbe5.bkt.clouddn.com/nfc-data-introduction-20183280136.png" alt="nfc-data-introduction-20183280136"></p>
+<h1 id="0X03-M1卡的数据结构"><a href="#0X03-M1卡的数据结构" class="headerlink" title="0X03 M1卡的数据结构"></a>0X03 M1卡的数据结构</h1><p>M1卡其中分为16个扇区，每个扇区有16个字节。</p>
+<p>每个扇区都有相对独立的一组密码及访问控制。</p>
+<p>M1卡其中包括了 0 ~ 15 总共16个扇区，</p>
+<p>每个扇区又分成了从0 ~ 3 共四个块，每个块保证可以存放16B</p>
+<p>为何非要从零开始，这里可能是与C语言里面数组下标默认从零开始计算有关系吧，可以非常容易的计算地址偏移量。</p>
+<p>其中每个扇区的第3块是用来保存KEYA、KEYB和控制位的       。</p>
+<p>每张 M1 卡都有一个全球唯一的 UID 号，这个 UID 号保存在卡的第一个扇区（0 扇区）的第一段（0 段），也称为厂商段，其中前 4 个字节是卡的 UID，第 5 个字节是卡 UID 的校验位，剩下的是厂商数据。并且这个段在出厂之前就会被设置了写入保护锁死了UID，只能读取不能修改。当然有需求就有市场，这个也有例外，有种叫 UID 卡的特殊卡，UID 是没有设置保护的，其实就是厂家不按规范生产的卡。<br>下图很清晰的列出了 M1 卡的结构。<br><img src="http://p68umjbe5.bkt.clouddn.com/nfc-data-introduction-20183280212.png" alt="nfc-data-introduction-20183280212"></p>
+<p>结构总结如下：</p>
+<p>1、M1卡分为16个扇区，每个扇区由4块（块0、块1、块2、块3）组成，（我们也将16个扇区的64个块按绝对地址编号为0~63</p>
+<p>2、第0扇区的块0（即绝对地址0块），它用于存放厂商代码，已经固化，不可更改。</p>
+<p>3、每个扇区的块0、块1、块2为数据块，可用于存贮数据。</p>
+<p>4、每个扇区的块3为控制块，包括了密码A、存取控制、密码B。</p>
+<p>5、每个扇区的密码和存取控制都是独立的，设有各自的密码及存取控制。</p>
+<p>0X04 关于M卡的控制位计算</p>
+<p>关于控制位的介绍刚开始感觉对于这个没有什么用处，但是作为一个入门级别的文章，还是加一下吧。</p>
+<p>其中每个扇区中的0~2数据段的读、写、加值、减值操作权限包括第3块中的对KEYA、KEYB的操作。</p>
+<p> <img src="http://p68umjbe5.bkt.clouddn.com/nfc-data-introduction-20183280314.png" alt="nfc-data-introduction-20183280314"></p>
+<p> <img src="http://p68umjbe5.bkt.clouddn.com/nfc-data-introduction-20183280320.png" alt="nfc-data-introduction-20183280320"></p>
+<p> <img src="http://p68umjbe5.bkt.clouddn.com/nfc-data-introduction-20183280329.png" alt="nfc-data-introduction-20183280329"></p>
+<p>计算方法如下图（符号查上面的表）：</p>
+<p><img src="http://p68umjbe5.bkt.clouddn.com/nfc-data-introduction-20183280343.png" alt="nfc-data-introduction-20183280343"></p>
+<p>当然我们没有必要按照位数进行一步一步的计算，我们要学会使用工具（任何动物的最大区别）。</p>
+<p>网上有许多的“M1卡控制字节生成工具”</p>
+<h1 id="0x05-结语"><a href="#0x05-结语" class="headerlink" title="0x05 结语"></a>0x05 结语</h1><p>此篇文章仅作为RFID技术的入门级别的文章，今天的这篇文章仅仅作为M1卡的介绍</p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -486,7 +524,7 @@
                             This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/">https://blog.suixin.kim/2017/05/03/dead-poets-society-thinking/</a>
+                        <strong>本文链接：</strong><a href="https://blog.suixin.kim/2016/12/08/nfc-data-introduction/">https://blog.suixin.kim/2016/12/08/nfc-data-introduction/</a>
                     </p>
                 </blockquote>
         
@@ -508,7 +546,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/06/10/this-age-song-words/" id="post_nav-newer" class="prev-content">
+        <a href="/2017/05/03/dead-poets-society-thinking/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -522,7 +560,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2016/12/08/nfc-data-introduction/" id="post_nav-older" class="next-content">
+        <a href="/2016/12/07/emoji-list/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
