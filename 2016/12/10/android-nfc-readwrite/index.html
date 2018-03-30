@@ -43,7 +43,7 @@
     
     <title>
         
-            hexo博客指南 | 
+            RFID研究（二）安卓NFC，RFID读卡写卡初体验 | 
         
         suixin&#39;s blog
     </title>
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="suixin&#39;s blog">
-    <meta name="msapplication-starturl" content="https://blog.suixin.kim/2018/03/27/start-hexo/">
+    <meta name="msapplication-starturl" content="https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="suixin&#39;s blog">
@@ -230,16 +230,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://blog.suixin.kim/2018/03/27/start-hexo/">
+    <meta property="og:url" content="https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="hexo博客指南 | suixin&#39;s blog">
+    <meta property="og:title" content="RFID研究（二）安卓NFC，RFID读卡写卡初体验 | suixin&#39;s blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Tue Mar 27 2018 09:00:23 GMT+0800">
-        <meta property="article:modified_time" content="Tue Mar 27 2018 16:47:37 GMT+0800">
+        <meta property="article:published_time" content="Sat Dec 10 2016 21:00:00 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 30 2018 10:37:48 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,7 +247,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://blog.suixin.kim/2018/03/27/start-hexo/index.html" />
+        <link rel="canonical" href="https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -259,10 +259,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://blog.suixin.kim/2018/03/27/start-hexo/index.html",
-    "headline": "hexo博客指南",
-    "datePublished": "Tue Mar 27 2018 09:00:23 GMT+0800",
-    "dateModified": "Tue Mar 27 2018 16:47:37 GMT+0800",
+    "mainEntityOfPage": "https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/index.html",
+    "headline": "RFID研究（二）安卓NFC，RFID读卡写卡初体验",
+    "datePublished": "Sat Dec 10 2016 21:00:00 GMT+0800",
+    "dateModified": "Fri Mar 30 2018 10:37:48 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "suixin",
@@ -346,7 +346,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#环境准备"><span class="post-toc-number">1.</span> <span class="post-toc-text">环境准备</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装nodejs"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">安装nodejs</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装Git"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">安装Git</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#安装编辑器"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">安装编辑器</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化"><span class="post-toc-number">3.</span> <span class="post-toc-text">初始化</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#生成静态页面"><span class="post-toc-number">4.</span> <span class="post-toc-text">生成静态页面</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#本地启动"><span class="post-toc-number">5.</span> <span class="post-toc-text">本地启动</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#写文章"><span class="post-toc-number">6.</span> <span class="post-toc-text">写文章</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#命令"><span class="post-toc-number">7.</span> <span class="post-toc-text">命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#常用命令"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">常用命令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简写"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">简写</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#404页面"><span class="post-toc-number">8.</span> <span class="post-toc-text">404页面</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0x00-安卓NFC初体验"><span class="post-toc-number">1.</span> <span class="post-toc-text">0x00 安卓NFC初体验</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0x0F-价格昂贵的一张飞机票"><span class="post-toc-number">2.</span> <span class="post-toc-text">0x0F 价格昂贵的一张飞机票</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#0xFF-进入正题"><span class="post-toc-number">3.</span> <span class="post-toc-text">0xFF 进入正题</span></a></li></ol>
     </ul>
     
 
@@ -378,7 +378,7 @@
         
     
             <p class="article-headline-p">
-                hexo博客指南
+                RFID研究（二）安卓NFC，RFID读卡写卡初体验
             </p>
         </div>
 
@@ -397,7 +397,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>suixin</strong>
-        <span>3月 27, 2018</span>
+        <span>12月 10, 2016</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -429,7 +429,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=hexo博客指南&url=https://blog.suixin.kim/2018/03/27/start-hexo/index.html&pic=https://blog.suixin.kim/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=RFID研究（二）安卓NFC，RFID读卡写卡初体验&url=https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/index.html&pic=https://blog.suixin.kim/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -438,7 +438,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=hexo博客指南&url=https://blog.suixin.kim/2018/03/27/start-hexo/index.html&via=suixin" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=RFID研究（二）安卓NFC，RFID读卡写卡初体验&url=https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/index.html&via=suixin" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -447,7 +447,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.suixin.kim/2018/03/27/start-hexo/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -456,7 +456,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.suixin.kim/2018/03/27/start-hexo/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -481,25 +481,17 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>写在更换hexo中用到的一些知识。hexo的轻便小巧吸引了我。</p>
-<p>hexo出自台湾大学生<a href="http://twitter.com/tommy351" target="_blank" rel="noopener">tommy351</a>之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。先看看tommy是如何吐槽Octopress的 →＿→ <a href="https://zespia.tw/blog/2012/10/11/hexo-debut/" target="_blank" rel="noopener">Hexo颯爽登場</a>。<br>进入正题</p>
-<hr>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h4><h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><h4 id="安装编辑器"><a href="#安装编辑器" class="headerlink" title="安装编辑器"></a>安装编辑器</h4><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Node 和 Git 都安装好之后，执行如下命令安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><p>安装Hexo完成之后，执行下面的命令，Hexo将在指定的文件夹中新建所需要的文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>目录结构如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml   	//网站的大部分配置</span><br><span class="line">├── package.json  	//应用程序的信息</span><br><span class="line">├── scaffolds 		//模版文件夹</span><br><span class="line">├── <span class="built_in">source</span>   		//存放用户资源的地方</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes   		//主题文件夹</span><br></pre></td></tr></table></figure></p>
-<p>好啦，到此，全部的安装工作已经完成了！</p>
-<h2 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h2><p>这个地方需要注意需要在<folder>的目录之下，生成静态页面到public目录下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">或者是使用简写</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></folder></p>
-<h2 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h2><p>启动本地服务，文章可以进行浏览<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br><span class="line">或者是使用简写</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
-<p>这个时候在浏览器中输入 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以了。</p>
+        <h1 id="0x00-安卓NFC初体验"><a href="#0x00-安卓NFC初体验" class="headerlink" title="0x00 安卓NFC初体验"></a>0x00 安卓NFC初体验</h1><p>硬件：三星galaxy s6 edge + 淘宝M卡一张（TAG类型为MifareClassic。）<br>开发环境：<br>Android studio<br><img src="http://p68umjbe5.bkt.clouddn.com/android-nfc-readwrite-2018330103522.gif" alt="android-nfc-readwrite-2018330103522"></p>
+<h1 id="0x0F-价格昂贵的一张飞机票"><a href="#0x0F-价格昂贵的一张飞机票" class="headerlink" title="0x0F 价格昂贵的一张飞机票"></a>0x0F 价格昂贵的一张飞机票</h1><p>Android 文档相关内容：<a href="https://developer.android.com/guide/topics/connectivity/nfc/nfc.html#manifest" target="_blank" rel="noopener">点我点我</a> 谷歌</p>
+<h1 id="0xFF-进入正题"><a href="#0xFF-进入正题" class="headerlink" title="0xFF 进入正题"></a>0xFF 进入正题</h1><p>在Android NFC 应用中，Android手机通常是作为通信中的发起者，也就是作为各种NFC卡的读写器。Android对NFC的<br>支持主要在 android.nfc 和android.nfc.tech 两个包中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">android.nfc 包</span><br><span class="line"></span><br><span class="line">NfcManager 管理Android设备中指出的所有NFCAdapter，一般直接调用getDefaultAapater来获取手机中的Adapter。</span><br><span class="line"></span><br><span class="line">NfcAdapter 相当于一个NFC适配器，手机装了NfcAdapter才能发起NFC通信。</span><br><span class="line"></span><br><span class="line">NDEF: NFC Data Exchange Format，即NFC数据交换格式。</span><br><span class="line"></span><br><span class="line">NdefMessage 和NdefRecord NDEF 为NFC forum 定义的数据格式。</span><br><span class="line"></span><br><span class="line">Tag 代表一个被动式Tag对象。当Android设备检测到一个Tag时，会创建一个Tag对象，将其放在Intent对象，然后发送到相应的Activity。</span><br><span class="line"></span><br><span class="line">android.nfc.tech 中则定义了可以对Tag进行的读写操作的类，</span><br></pre></td></tr></table></figure>
+<p>这些类按照其使用的技术类型可以分成不同的类如：NfcA, NfcB, NfcF,以及MifareClassic 等。<br>其中MifareClassic比较常见，这也是今天代码的主角。</p>
 <blockquote>
-<p><strong> 这个地方需要注意一点，文章更改之后，从本地浏览的时候回发生变化，但是如果没有执行 <em>hexo g</em> 这种情况下进行推送到github，文件是不会发生变化的 </strong> </p>
+<p>源代码下载地址：</p>
 </blockquote>
-<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p>博客这个时候已经创建好了，我们来创建一篇新文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
-<p>其中的layout是可选参数，默认值为post。layout在scaffolds文件夹中<br>比如默认的post.md<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; 		//新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; 	//新建页面</span><br><span class="line">hexo generate 				//生成静态页面public文件夹中</span><br><span class="line">hexo server 				//开启预览访问端口</span><br><span class="line">hexo deploy					//部署GitHub</span><br></pre></td></tr></table></figure>
-<h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n ==&gt; hexo new  </span><br><span class="line">hexo g ==&gt; hexo generate</span><br><span class="line">hexo s ==&gt; hexo server</span><br><span class="line">hexo d ==&gt; hexo deploy</span><br></pre></td></tr></table></figure>
-<h2 id="404页面"><a href="#404页面" class="headerlink" title="404页面"></a>404页面</h2><p>GitHub Pages 自定义404页面比较容易，直接在 source 文件夹下面创建404.html页面<br>注意在文件创建之后的头部一定要加入如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layout: false</span><br><span class="line">title: &quot;404&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<p>404页面我们可以做更多有意义的事，比如404公益，也是我的404页面，<br><a href="http://www.qq.com/404/" target="_blank" rel="noopener">腾讯公益404</a><br><a href="https://yibo.iyiyun.com/Index/web404" target="_blank" rel="noopener">404公益_益云(公益互联网)社会创新中心</a><br><a href="https://404page.missingkids.org.tw/" target="_blank" rel="noopener">失蹤兒童少年資料管理中心404</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">layout: false</span><br><span class="line">title: &quot;404&quot;</span><br><span class="line">---</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;404&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot; charset=&quot;utf-8&quot; homePageUrl=&quot;http://blog.suixin.kim&quot; homePageName=&quot;回到我的主页&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>github：<a href="https://github.com/suixinio/M1Card_RW" target="_blank" rel="noopener">https://github.com/suixinio/M1Card_RW</a></p>
+<p>重要数据已经扣除，此代码仅作为研究使用。</p>
+<p>PS：关于代码，或者是M卡片结构请看：<br><a href="https://blog.suixin.kim/2016/12/08/nfc-data-introduction/">https://blog.suixin.kim/2016/12/08/nfc-data-introduction/</a></p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -508,7 +500,7 @@
                             This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>
                         </strong>
                         <br>
-                        <strong>本文链接：</strong><a href="https://blog.suixin.kim/2018/03/27/start-hexo/">https://blog.suixin.kim/2018/03/27/start-hexo/</a>
+                        <strong>本文链接：</strong><a href="https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/">https://blog.suixin.kim/2016/12/10/android-nfc-readwrite/</a>
                     </p>
                 </blockquote>
         
@@ -530,7 +522,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/03/28/vscode-markdown/" id="post_nav-newer" class="prev-content">
+        <a href="/2017/05/03/dead-poets-society-thinking/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -544,7 +536,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2018/03/22/hello-world/" id="post_nav-older" class="next-content">
+        <a href="/2016/12/08/nfc-data-introduction/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">

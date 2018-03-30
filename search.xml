@@ -66,6 +66,15 @@
     </entry>
     
     <entry>
+      <title>RFID研究（二）安卓NFC，RFID读卡写卡初体验</title>
+      <link href="/2016/12/10/android-nfc-readwrite/"/>
+      <url>/2016/12/10/android-nfc-readwrite/</url>
+      <content type="html"><![CDATA[<h1 id="0x00-安卓NFC初体验"><a href="#0x00-安卓NFC初体验" class="headerlink" title="0x00 安卓NFC初体验"></a>0x00 安卓NFC初体验</h1><p>硬件：三星galaxy s6 edge + 淘宝M卡一张（TAG类型为MifareClassic。）<br>开发环境：<br>Android studio<br><img src="http://p68umjbe5.bkt.clouddn.com/android-nfc-readwrite-2018330103522.gif" alt="android-nfc-readwrite-2018330103522"></p><h1 id="0x0F-价格昂贵的一张飞机票"><a href="#0x0F-价格昂贵的一张飞机票" class="headerlink" title="0x0F 价格昂贵的一张飞机票"></a>0x0F 价格昂贵的一张飞机票</h1><p>Android 文档相关内容：<a href="https://developer.android.com/guide/topics/connectivity/nfc/nfc.html#manifest" target="_blank" rel="noopener">点我点我</a> 谷歌</p><h1 id="0xFF-进入正题"><a href="#0xFF-进入正题" class="headerlink" title="0xFF 进入正题"></a>0xFF 进入正题</h1><p>在Android NFC 应用中，Android手机通常是作为通信中的发起者，也就是作为各种NFC卡的读写器。Android对NFC的<br>支持主要在 android.nfc 和android.nfc.tech 两个包中。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">android.nfc 包</span><br><span class="line"></span><br><span class="line">NfcManager 管理Android设备中指出的所有NFCAdapter，一般直接调用getDefaultAapater来获取手机中的Adapter。</span><br><span class="line"></span><br><span class="line">NfcAdapter 相当于一个NFC适配器，手机装了NfcAdapter才能发起NFC通信。</span><br><span class="line"></span><br><span class="line">NDEF: NFC Data Exchange Format，即NFC数据交换格式。</span><br><span class="line"></span><br><span class="line">NdefMessage 和NdefRecord NDEF 为NFC forum 定义的数据格式。</span><br><span class="line"></span><br><span class="line">Tag 代表一个被动式Tag对象。当Android设备检测到一个Tag时，会创建一个Tag对象，将其放在Intent对象，然后发送到相应的Activity。</span><br><span class="line"></span><br><span class="line">android.nfc.tech 中则定义了可以对Tag进行的读写操作的类，</span><br></pre></td></tr></table></figure><p>这些类按照其使用的技术类型可以分成不同的类如：NfcA, NfcB, NfcF,以及MifareClassic 等。<br>其中MifareClassic比较常见，这也是今天代码的主角。</p><blockquote><p>源代码下载地址：</p></blockquote><p>github：<a href="https://github.com/suixinio/M1Card_RW" target="_blank" rel="noopener">https://github.com/suixinio/M1Card_RW</a></p><p>重要数据已经扣除，此代码仅作为研究使用。</p><p>PS：关于代码，或者是M卡片结构请看：<br><a href="https://blog.suixin.kim/2016/12/08/nfc-data-introduction/">https://blog.suixin.kim/2016/12/08/nfc-data-introduction/</a></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>RFID研究（一）M1卡背景与数据结构</title>
       <link href="/2016/12/08/nfc-data-introduction/"/>
       <url>/2016/12/08/nfc-data-introduction/</url>
