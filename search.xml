@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>离线API文档查询工具Dash和Zeal</title>
+      <link href="/2018/04/15/zeal-doc-browser/"/>
+      <url>/2018/04/15/zeal-doc-browser/</url>
+      <content type="html"><![CDATA[<p>开发的时候那会遇到查询文档的API文档的问题，经常需要同时打开N个窗口，挺让人烦的一件事情，无奈为了提高效率，发现了Dash和Zeal这两款软件，肯定会让你爱不释手</p><h1 id="Dash-（MAC-OS）"><a href="#Dash-（MAC-OS）" class="headerlink" title="Dash （MAC OS）"></a>Dash （MAC OS）</h1><blockquote><p>MAC OS系统，Windows系统的跳转 <strong>Zeal</strong></p></blockquote><p>官方地址：<a href="https://kapeli.com/dash" target="_blank" rel="noopener">https://kapeli.com/dash</a><br>功能介绍：<br>官方用了一句话简介的概括了Dash:Dash是一个API文档浏览器和代码片段管理器。Dash存储代码片段，并立即搜索200多个API，100多个备忘录和更多的脱机文档集。</p><p>其配合Aifred能有相当搞得开发效率（当然windows也有相应的对应）</p><p><img src="https://kapeli.com/img/dash-s1.png" alt=""><br><img src="https://kapeli.com/img/dash-s2.png" alt=""><br><img src="https://kapeli.com/img/dash-s3.png" alt=""></p><h1 id="Zeal-（Windows-Linux）"><a href="#Zeal-（Windows-Linux）" class="headerlink" title="Zeal （Windows|Linux）"></a>Zeal （Windows|Linux）</h1><blockquote><p>好吧，Windows 用户福音重点来了！免费！</p></blockquote><p>官方地址：<a href="https://zealdocs.org/" target="_blank" rel="noopener">https://zealdocs.org/</a></p><p>Dash 方便的使用体验没有Windows版本确实有些让我沮丧，但是发现了Windows上面的替代品-Zeal。</p><p>Zeal 包含有windows版本还有Linux版本是一个开源的软件，官方对其的定义也是相当简洁<strong>Zeal is an offline documentation browser for software developers.</strong></p><p>当然Zeal的文档是由Dash慷慨提供的，doc文档上面与Dash无异。</p><p>在windows上面配合Wox使用，效果还是相当不错的,效果如下。<br><img src="http://p68umjbe5.bkt.clouddn.com/README-201841502754.gif" alt="README-201841502754"></p><p>插件地址:<a href="https://github.com/suixinio/Wox.Plugin.Wox-Zeal-tool" target="_blank" rel="noopener">https://github.com/suixinio/Wox.Plugin.Wox-Zeal-tool</a></p><p>下载插件解压到 <strong><code>Wox\app-*\Plugins</code></strong> 下面即可</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>github OAjuth 2.0 授权验证</title>
       <link href="/2018/04/10/github-oauth-message-board/"/>
       <url>/2018/04/10/github-oauth-message-board/</url>
