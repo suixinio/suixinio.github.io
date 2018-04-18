@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>go get 设置代理</title>
+      <link href="/2018/04/18/go-get-proxy/"/>
+      <url>/2018/04/18/go-get-proxy/</url>
+      <content type="html"><![CDATA[<p>在使用 <code>go get</code> 命令在提取一些工程或者是依赖的时候，经常连接失败被墙掉。只能通过变更代理的方式</p><h1 id="通过shell环境变量设置代理"><a href="#通过shell环境变量设置代理" class="headerlink" title="通过shell环境变量设置代理"></a>通过shell环境变量设置代理</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> http_proxy=http://ip:prot</span><br><span class="line">go get ....</span><br></pre></td></tr></table></figure><h1 id="通过设置git代理"><a href="#通过设置git代理" class="headerlink" title="通过设置git代理"></a>通过设置git代理</h1><p>这个操作也是Golang官方推荐的<a href="https://github.com/golang/go/wiki/GoGetProxyConfig" target="_blank" rel="noopener">方案</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">http </span><br><span class="line">git config --global http.proxy http://ip:port </span><br><span class="line"></span><br><span class="line">socket5 </span><br><span class="line">git config --global http.proxy <span class="string">'socks5://ip:port'</span> </span><br><span class="line"></span><br><span class="line">取消代理 </span><br><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>离线API文档查询工具Dash和Zeal</title>
       <link href="/2018/04/15/zeal-doc-browser/"/>
       <url>/2018/04/15/zeal-doc-browser/</url>
