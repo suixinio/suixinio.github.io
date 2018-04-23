@@ -111,6 +111,15 @@
     </entry>
     
     <entry>
+      <title>在Windows使用git，出现 warning - LF will be replaced by CRLF in</title>
+      <link href="/2016/12/23/git-warning-LF-CRLF/"/>
+      <url>/2016/12/23/git-warning-LF-CRLF/</url>
+      <content type="html"><![CDATA[<blockquote><p>在windows上面使用Git。当在命令行使用git add.，会出现 <code>warning: LF will be replaced by CRLF in</code>的警告。</p></blockquote><h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p>CRLF – Carriage-Return Line-Feed 回车换行。也就是回车（CR, ASCII 13, \r），换行（LF, ASCII 10,\n）。这两个ACSII字符不会在屏幕有任何显示，是Windows平台上用来标识一行的结束。</p><p>而在Linux/UNIX系统中只有换行符LF，没有回车符CR。也就是说在Windows中的换行符为 CRLF，而在Linux下的换行符为：LF。</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.autocrlf <span class="literal">false</span></span><br></pre></td></tr></table></figure><h2 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h2><p><a href="https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git" target="_blank" rel="noopener">Git配置</a><br><a href="https://help.github.com/articles/dealing-with-line-endings/" target="_blank" rel="noopener">Dealing with line endings</a></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>RFID研究（二）安卓NFC，RFID读卡写卡初体验</title>
       <link href="/2016/12/10/android-nfc-readwrite/"/>
       <url>/2016/12/10/android-nfc-readwrite/</url>
