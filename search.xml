@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>Vmware 克隆 Centos6.8 虚拟机网卡无法启动的问题</title>
+      <link href="/2018/06/04/vmware-copy-vmware-network/"/>
+      <url>/2018/06/04/vmware-copy-vmware-network/</url>
+      <content type="html"><![CDATA[<h1 id="故障问题"><a href="#故障问题" class="headerlink" title="故障问题"></a>故障问题</h1><p>从vmware的完全克隆功能复制一台Centos6.8的虚拟机，启动之后发现网卡没有启动，于是重启了一下network服务，发现错误的提示信息”Device eth0 does not seem to be present , delaying initialization.”</p><h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>问题出在了/etc/udev/rules.d/70-persistent-net.rules 这个文件上，这个文件绑定了网卡和mac地址信息，克隆系统，完整的卡隆了回来，但是克隆过来的操作系统，网卡发生了变化，mac地址发生了变化。</p><h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h1><ul><li>编辑eth0的配置文件：vi /etc/sysconfig/network-scripts/ifcfg-eth0，删除HWADDR地址那一行及UUID的行</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HWADDR=**:****</span><br><span class="line">UUID=***-***-***-**</span><br></pre></td></tr></table></figure><p>修改之后我们需要删除一下 <code>/etc/udev/rules.d/70-persistent-net.rules</code></p><p>然后重启一下reboot.</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>海量的数据中进行查找一个中位数</title>
       <link href="/2018/05/17/big-data-find-median/"/>
       <url>/2018/05/17/big-data-find-median/</url>
